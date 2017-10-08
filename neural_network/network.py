@@ -18,7 +18,7 @@ class Network:
         input_values = list(input_values)
         for layer in self.layers:
             input_values = layer.eval(input_values)
-        return input_list
+        return input_values
 
 if __name__ == "__main__":
     # run unit tests
